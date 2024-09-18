@@ -137,6 +137,7 @@
 .menu li{
     padding: 20px;
     list-style: none;
+    transition: 0.3s all;
 }
 .menu li:hover{
     padding: 20px;
