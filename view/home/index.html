@@ -17,17 +17,25 @@
                 <img src="../../assets/materiais/petit perfil.png" alt="">
             </section>
             <ul>
-                <li><i class="bi-house-fill"></i>Home</li>
-                <li><i class="bi-folder-fill"></i>Pedidos</li>
-                <li><i class="bi-people-fill"></i>Clientes</li>
+                <li class="tab-btn active" content-id="Home"><i class="bi-house-fill"></i>Home</li>
+                <li class="tab-btn" content-id="Pedidos"><i class="bi-folder-fill"></i>Pedidos</li>
+                <li class="tab-btn" content-id="Clientes"><i class="bi-people-fill"></i>Clientes</li>
             </ul>
         </aside>
         <div class="container-content">
-            <div>
-                <h1>content</h1>
+            <!-- conteudo home  -->
+            <div class="content show" id="Home">
+                <h1>Content Geral Vision</h1>
+            </div>
+            <div class="content" id="Pedidos">
+                <h1>Content Pedidos</h1>
+            </div>
+            <div class="content" class="content" id="Clientes">
+                <h1>Content Clientes</h1>
             </div>
         </div>
     </div>
+    <script src="../../src/script/script.js" ></script>
 </body>
 
 </html>
