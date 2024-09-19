@@ -24,18 +24,31 @@
         </aside>
         <div class="container-content">
             <!-- conteudo home  -->
-            <div class="content show" id="Home">
+            <!-- home/ visão geral -->
+            <section class="content content-geral " id="Home">
                 <h1>Content Geral Vision</h1>
-            </div>
-            <div class="content" id="Pedidos">
-                <h1>Content Pedidos</h1>
-            </div>
-            <div class="content" class="content" id="Clientes">
+
+            </section>
+
+            <!-- Pedidos -->
+            <section class="content content-pedidos show" id="Pedidos">
+                <h1>PEDIDOS</h1>
+                <div class="container-filtro">
+                    <div><p>ID</p><input type="text" name="" id=""></div>
+                    <div><p>CLIENTE</p><input type="text" name="" id=""></div>
+                    <div><p>STATUS</p><input type="text" name="" id=""></div>
+                    <div><input type="submit" value="FILTRAR" name="" id=""></div>
+                </div>
+
+            </section>
+
+            <!-- Clientes -->
+            <section class="content content-clientes" id="Clientes">
                 <h1>Content Clientes</h1>
-            </div>
+            </section>
         </div>
     </div>
-    <script src="../../src/script/script.js" ></script>
+    <script src="../../src/script/script.js"></script>
 </body>
 
 </html>
