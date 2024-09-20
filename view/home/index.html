@@ -25,13 +25,13 @@
         <div class="container-content">
             <!-- conteudo home  -->
             <!-- home/ visão geral -->
-            <section class="content content-geral " id="Home">
+            <section class="content content-geral show " id="Home">
                 <h1>Content Geral Vision</h1>
 
             </section>
 
             <!-- Pedidos -->
-            <section class="content content-pedidos show" id="Pedidos">
+            <section class="content content-pedidos " id="Pedidos">
                 <h1>PEDIDOS</h1>
                 <form class="container-filtro">
                     <div>
@@ -58,24 +58,26 @@
                         <input type="submit" value="FILTRAR" name="" id="">
                     </div>
                 </form>
-                <table>
-                    <tr>
-                        <td>
-                            <p>CONCLUIDO</p>
-                            <img src="../../assets/icon/iconCheck.png" alt="">
-                        </td>
-                        <td>
-                            <h1>Serra Azul 3 - #01</h1>
-                            <p>NF-E, Boleto 7/14/21 dias</p>
-                            <p>Logistica Própia</p>
-                        </td>
-                        <td>
-                            <h1>50UN - R$ 00,00</h1>
-                            <p>01/01/2024 00:00</p>
-                        </td>
-                    </tr>
-                </table>
-                <button class="adc-pedido">Novo Pedido</button>
+                <div class="container-list-pedidos">
+                    <table>
+                        <tr>
+                            <td>
+                                <p>CONCLUIDO</p>
+                                <img src="../../assets/icon/iconCheck.png" alt="">
+                            </td>
+                            <td>
+                                <h1>Serra Azul 3 - #01</h1>
+                                <p>NF-E, Boleto 7/14/21 dias</p>
+                                <p>Logistica Própia</p>
+                            </td>
+                            <td>
+                                <h1>50UN - R$ 00,00</h1>
+                                <p>01/01/2024 00:00</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <button class="adc-pedido"> <a href="pedidos/novo pedido/index.html">Novo Pedido</a></button>
             </section>
 
             <!-- Clientes -->
