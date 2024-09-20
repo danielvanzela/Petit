@@ -5,6 +5,7 @@
 }
 
 :root {
+    --cinza-m-claro: #f9f9f9;
     --cinza-claro: #949494;
     --laranja: #FF9011;
     --laranja-escuro: #E67F0D;
@@ -193,19 +194,19 @@
 }
 
 .content-pedidos>.container-filtro div:nth-child(2) {
-    flex-grow: 4;
+    flex-grow: 5;
 
 }
 
 .content-pedidos>.container-filtro div:nth-child(3) {
-    flex-grow: 3;
+    flex-grow: 2;
 }
 
 .content-pedidos>.container-filtro div:nth-child(4) {
     flex-grow: 2;
     display: flex;
     align-items: end;
-    
+
 }
 
 .content-pedidos>.container-filtro div {
@@ -217,18 +218,93 @@
 .content-pedidos>.container-filtro div input[type="submit"] {
     background-color: var(--laranja);
     cursor: pointer;
+    border: none;
     box-shadow: var(--sombra);
 }
 
-.content-pedidos>.container-filtro div input {
+.content-pedidos>.container-filtro div input,
+.content-pedidos>.container-filtro div select {
     width: 100%;
     height: 30px;
     background-color: white;
     border: 1px solid var(--cinza-claro);
     border-radius: 4px;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
+.content-pedidos table {
+    width: 100%;
+}
+
+.content-pedidos table td {
+    height: 10vh;
+    padding: 5px 0px;
+}
+
+.content-pedidos table tr:nth-child(even) {
+    background-color: var(--cinza-m-claro);
+    border-radius: 4px;
+}
+
+.content-pedidos table tr td:nth-child(1) {
+    width: 150px;
+    background-color: #00B206;
+    height: 10vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-pedidos table tr td:nth-child(2) {
+    flex-grow: 4;
+}
+
+.content-pedidos table tr td:nth-child(3) {
+    flex-grow: 4;
+    text-align: right;
+}
+
+.content-pedidos td img {
+    z-index: 9;
+    height: 130%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-10%, -50%);
+}
+
+.content-pedidos td:nth-child(1) p {
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    color: white;
+}
+
+.adc-pedido {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 10vw;
+    height: 7vh;
+    background-color: var(--laranja);
+    color: black;
+    font-weight: 600;
+    box-shadow: var(--sombra);
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s all;
+    border-radius: 4px;
+}
+.adc-pedido:hover{
+background-color: var(--laranja-escuro);
+}
+
+
 /* RESPONSE WIDTH 900px */
+
 @media (max-width:900px) {
     .section-login main {
         width: 75vw;
