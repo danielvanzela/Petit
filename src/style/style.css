@@ -7,6 +7,7 @@
 :root {
     --cinza-m-claro: #f9f9f9;
     --cinza-claro: #949494;
+    --cinza-escuro: #494949;
     --laranja: #FF9011;
     --laranja-escuro: #E67F0D;
     --laranja-vermelho: #FE4E00;
@@ -348,6 +349,10 @@
     box-sizing: border-box;
     box-shadow: var(--sombra);
     z-index: 99;
+
+    & img {
+        width: 80%;
+    }
 }
 
 .content-category-new-order input[type="checkbox"] {
@@ -373,52 +378,29 @@
 .resume-order {
     position: fixed;
     z-index: 99;
-    width: 60%;
+    width: 8vw;
+    height: 8vw;
     background-color: var(--laranja);
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    height: 10vh;
-    border-radius: 8px 8px 0px 0px;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: var(--sombra);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    right: 0;
+    border-radius: 50% 50% 10px 50%;
+    margin: 10px;
 
-.resume-order button {
-    padding: 10px 25px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: var(--sombra);
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: #00B206;
-    color: white;
+    & button,
+    p {
+
+    }
+
+    & .title-new-order {
+    }
+
+    & button {
+    }
 
 }
 
-.resume-order button,
-.resume-order p {
-    font-size: 18px;
-    font-weight: 500;
 
-}
 
-.title-new-order {
-    width: 100%;
-    height: 10vh;
-    top: 0;
-    background-color: white;
-    position: sticky;
-    box-shadow: var(--sombra);
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    box-sizing: border-box;
-}
 
 .product-new-order table {
     width: 85vw;
@@ -500,12 +482,134 @@
 #resume_order {
     position: fixed;
     z-index: 999;
-    background-color: magenta;
+    background-color: var(--laranja);
     width: 100vw;
     top: 100vh;
     transition: 0.3s all;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+
+    & i::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    & h1 {
+        margin: 20px;
+    }
+
+    & form {
+        height: auto;
+        min-width: 50vw;
+        max-width: 55vw;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    & form input {
+        height: 5vh;
+        border-radius: 4px;
+        border: none;
+        box-shadow: var(--sombra);
+        padding: 3px;
+        box-sizing: border-box;
+        margin: 5px 0px;
+    }
+
+    & form input:nth-child(1) {
+        width: 100%;
+    }
+
+    & form div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    & form div input {
+        width: 100%;
+        max-width: 100%;
+        min-width: 150px;
+    }
+
+    & form div input:nth-child(2) {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    & section {
+        width: 50vw;
+        height: 10vh;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        border-radius: 4px;
+        margin: 3px;
+        border: 1px solid var(--cinza-claro);
+    }
+
+    & section img {
+        width: 5vw;
+        object-fit: cover;
+        border-radius: 2px;
+        margin-right: 10px;
+    }
+
+    & section p {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    & section p:nth-child(2) {
+        font-size: 18px;
+        width: 30vw;
+    }
+
+    & section p:nth-child(3) {
+        font-size: 18px;
+        color: var(--cinza-escuro);
+        width: 5vw;
+        justify-content: center;
+    }
+
+    & section p:nth-child(4) {
+        font-size: 20px;
+        width: 15vw;
+        justify-content: center;
+        font-weight: 600;
+        color: var(--cinza-escuro);
+        text-align: center;
+    }
+
+    & span {
+        width: 50vw;
+        text-align: right;
+        color: black;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    & span input[type="submit"] {
+        background-color: #00B206;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: var(--sombra);
+        color: white;
+        font-weight: 800;
+
+    }
 }
+
 
 /* RESPONSE WIDTH 900px */
 

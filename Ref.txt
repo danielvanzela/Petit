@@ -1,0 +1,2 @@
+Estamos utilizando icones do site: https://icons.getbootstrap.com/
+Para importar, utilize o link:  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">

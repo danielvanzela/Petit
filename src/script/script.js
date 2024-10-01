@@ -44,14 +44,17 @@ const tabClicked = (tab) => {
 }
 
 const VerificaPedido = document.getElementById("VerificaPedido");
-
 const resume_order = document.getElementById("resume_order");
-
-VerificaPedido.click
+const CloseOrder = document.getElementById("close-view-order");
 
 VerificaPedido.addEventListener("click", function () {
     // Ação a ser executada após o clique
-    console.log("Verificação de pedido");
-
+    console.log("Verificação de pedido aberta");
     resume_order.style.top = "0";
+});
+
+CloseOrder.addEventListener("click", function () {
+    // Ação a ser executada após o clique
+    console.log("Verificação de pedido fechado");
+    resume_order.style.top = "100vh";
 });

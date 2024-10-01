@@ -14,6 +14,8 @@
 <body>
     <main class="new-order">
         <aside class="content-category-new-order">
+            <a href="../../index.html"><img src="../../../../assets/materiais/logo petit.png" alt=""></a>
+            
             <h1>FILTROS</h1>
             <p>Por Categoria</p>
             <label for="category_caixa"><input type="checkbox" name="" id="category_caixa">Caixa</label>
@@ -42,27 +44,42 @@
             </table>
             <span class="resume-order">
                 <p>5 UN</p>
-                <h2>R$ 50,00</h2>
-                <button id="VerificaPedido">Finalizar</button>
+                <p>R$ 50,00</p>
+                <i class="bi bi-cart-fill"> </i>
             </span>
-            
+
         </section>
         <span id="resume_order">
+
+            <i class="bi bi-reply-fill" id="close-view-order"></i>
+
+            <!-- identificação para fechar pedido -->
+
             <h1>Revise o Pedido</h1>
-            
             <form action="">
-                <input placeholder="IDENTIFIQUE O CLIENTE" type="text">
-                <input placeholder="FATURAMENTO" type="text">
-                <input placeholder="LOGISTICA" type="text">
-                <input placeholder="PAGAMENTO" type="text">
-                <section>
-                    <img src="../../../../assets/materiais/queijo.png" alt="">
-                    <p>Produto A</p>
-                    <p>20UN</p>
-                    <p>R$365,00</p>
+                <input required placeholder="IDENTIFIQUE O CLIENTE" type="text">
+                <div>
+                    <input required placeholder="FATURAMENTO" type="text">
+                    <input required placeholder="LOGISTICA" type="text">
+                    <input required placeholder="PAGAMENTO" type="text">
+                </div>
 
-                </section>
+            </form>
 
+            <!-- perfil do produto na revisão de pedido -->
+            <section>
+                <img src="../../../../assets/materiais/queijo.png" width="350px" alt="">
+                <p>Produto A</p>
+                <p>20UN</p>
+                <p>R$365,00</p>
+            </section>
+           
+
+            <span>
+                <p>50UN</p>
+                <p>R$12,00</p>
+                <input type="submit" value="Fechar Pedido">
+            </span>
         </span>
 
     </main>
