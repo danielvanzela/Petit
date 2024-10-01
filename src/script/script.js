@@ -27,7 +27,7 @@ const tabClicked = (tab) => {
     tabs.forEach(tab => tab.classList.remove('active'));
     tab.classList.add('active');
 
-    
+
     // mudando página (aparece/desaparece)
     const contents = document.querySelectorAll('.content');
 
@@ -43,3 +43,15 @@ const tabClicked = (tab) => {
 
 }
 
+const VerificaPedido = document.getElementById("VerificaPedido");
+
+const resume_order = document.getElementById("resume_order");
+
+VerificaPedido.click
+
+VerificaPedido.addEventListener("click", function () {
+    // Ação a ser executada após o clique
+    console.log("Verificação de pedido");
+
+    resume_order.style.top = "0";
+});

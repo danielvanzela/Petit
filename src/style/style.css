@@ -397,7 +397,7 @@
     text-transform: uppercase;
     background-color: #00B206;
     color: white;
-    
+
 }
 
 .resume-order button,
@@ -495,6 +495,16 @@
     padding: 5px;
     cursor: pointer;
     height: 40px;
+}
+
+#resume_order {
+    position: fixed;
+    z-index: 999;
+    background-color: magenta;
+    width: 100vw;
+    top: 100vh;
+    transition: 0.3s all;
+    height: 100vh;
 }
 
 /* RESPONSE WIDTH 900px */
